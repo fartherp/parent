@@ -410,6 +410,11 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
+				<configuration>
+					<consoleOutput>true</consoleOutput>
+					<enableRSS>false</enableRSS>
+					<propertyExpansion>checkstyle.config.path=${basedir}</propertyExpansion>
+				</configuration>
 				<dependencies>
 					<dependency>
 						<groupId>com.puppycrawl.tools</groupId>
@@ -549,6 +554,45 @@
 			<plugin>
 				<groupId>org.gaul</groupId>
 				<artifactId>modernizer-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<version>${pmd.version}</version>
+				<executions>
+					<execution>
+						<phase>verify</phase>
+						<goals>
+							<goal>pmd</goal>
+							<goal>cpd</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<rulesets>
+						<ruleset>rulesets/java/ali-comment.xml</ruleset>
+						<ruleset>rulesets/java/ali-concurrent.xml</ruleset>
+						<ruleset>rulesets/java/ali-constant.xml</ruleset>
+						<ruleset>rulesets/java/ali-exception.xml</ruleset>
+						<ruleset>rulesets/java/ali-flowcontrol.xml</ruleset>
+						<ruleset>rulesets/java/ali-naming.xml</ruleset>
+						<ruleset>rulesets/java/ali-oop.xml</ruleset>
+						<ruleset>rulesets/java/ali-orm.xml</ruleset>
+						<ruleset>rulesets/java/ali-other.xml</ruleset>
+						<ruleset>rulesets/java/ali-set.xml</ruleset>
+					</rulesets>
+					<linkXref>true</linkXref>
+					<minimumTokens>100</minimumTokens>
+					<targetJdk>${maven.compiler.target}</targetJdk>
+					<verbose>true</verbose>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>com.alibaba.p3c</groupId>
+						<artifactId>p3c-pmd</artifactId>
+						<version>${p3c.version}</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 		</plugins>
 
