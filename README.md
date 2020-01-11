@@ -5,3 +5,6 @@
 [![License](http://img.shields.io/:license-apache-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 The fartherp parent POM which has to be inherited by all fartherp modules
+
+### 感谢开源项目
+![MyBatis](https://camo.githubusercontent.com/196d30052623ff7b233765c5f641dbc8ae2f287d/687474703a2f2f6d7962617469732e6769746875622e696f2f696d616765732f6d7962617469732d6c6f676f2e706e67)
