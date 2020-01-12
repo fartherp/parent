@@ -36,7 +36,7 @@ if [ $TRAVIS_REPO_SLUG == "fartherp/parent" ] && [ "$TRAVIS_BRANCH" == "master" 
   if [ $TRAVIS_JDK_VERSION == "openjdk8" ]; then
 
     # Deploy to sonatype
-    ./mvnw clean deploy -q --settings ./travis/settings.xml
+    ./mvnw deploy -q --settings ./travis/settings.xml
     echo -e "Successfully deployed SNAPSHOT artifacts to Sonatype under Travis job ${TRAVIS_JOB_NUMBER}"
 
     # Deploy to site
