@@ -20,7 +20,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.fartherp</groupId>
     <artifactId>fartherp-parent</artifactId>
-	<version>1</version>
+	<version>2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
     <name>fartherp-parent</name>
@@ -50,7 +50,7 @@
 		<url>https://github.com/fartherp/parent</url>
 		<connection>scm:git:git@github.com:fartherp/parent.git</connection>
 		<developerConnection>scm:git:git@github.com:fartherp/parent.git</developerConnection>
-		<tag>fartherp-parent-1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
