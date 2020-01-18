@@ -59,7 +59,7 @@
 	</issueManagement>
 	<ciManagement>
 		<system>Travis CI</system>
-		<url>https://travis-ci.com/fartherp/parent</url>
+		<url>https://travis-ci.org/fartherp/parent</url>
 	</ciManagement>
 	<distributionManagement>
 		<repository>
