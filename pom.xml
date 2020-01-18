@@ -25,7 +25,7 @@
 
     <name>fartherp-parent</name>
 	<description>The fartherp parent POM.</description>
-    <url>https://github.com/fartherp/fartherp-parent</url>
+    <url>https://github.com/fartherp/parent</url>
 	<organization>
 		<name>CK</name>
 		<url>https://github.com/fartherp</url>
@@ -47,19 +47,19 @@
 	</developers>
 
 	<scm>
-		<url>https://github.com/fartherp/fartherp-parent</url>
-		<connection>scm:git:git@github.com:fartherp/fartherp-parent.git</connection>
-		<developerConnection>scm:git:git@github.com:fartherp/fartherp-parent.git</developerConnection>
+		<url>https://github.com/fartherp/parent</url>
+		<connection>scm:git:git@github.com:fartherp/parent.git</connection>
+		<developerConnection>scm:git:git@github.com:fartherp/parent.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
 		<system>GitHub Issue Management</system>
-		<url>https://github.com/fartherp/fartherp-parent/issues</url>
+		<url>https://github.com/fartherp/parent/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>Travis CI</system>
-		<url>https://travis-ci.com/fartherp/fartherp-parent</url>
+		<url>https://travis-ci.com/fartherp/parent</url>
 	</ciManagement>
 	<distributionManagement>
 		<repository>
